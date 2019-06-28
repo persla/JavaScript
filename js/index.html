@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Intelligenstest</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+<h1>Intelligenstest</h1>
+<div class="content">
+    <div class="intro">
+    <h2>Introduktion</h2>
+    <p>Detta är ett intelligenstest som består av tre deltester som prövar förmågor utifrån
+        olika kognitiva aspekter:</p>
+        <p>Deltest 1: Testar verbala förmågan i form av ett ordtest.</p>
+        <p>Deltest 2: Testar matematisk-logiska intelliensen i form av
+            sekvensspelet Fizz buzz.</p>
+        <p>Deltest 3: Testar läsförståelse kombinerat med visuell perception i form
+        av textbaserade instruktioner relaterat till figurer.</p>
+        <h3>Starta testet:</h3>
+    </div>
+    <div class="word">
+        <h3>Deltest 1: Ordförståelse</h3>
+        <p>Testet är utformat i form av fem stycken flervalsfrågor med fem stycken svarsalternativ
+        vardera fråga. Frågorna är formulerade enligt följande exempel:</p>
+        Vad betyder ordet<i> begrundan</i>?
+        <ul style="list-style-type:none">
+            <li>övertygelse</li>
+            <li>synsätt</li>
+            <li>uppskattning</li>
+            <li>kunskap</li>
+            <li>eftertanke</li>
+        </ul>
+        <p>Du ska i testet klicka på det korrekta alternativet. Du har flera svarsmöjligheter
+            på varje fråga. Exemplets korrekt alternativ är <i>eftertanke.</i></p>
+        </div>
+    <div class="buzz">
+        <h3>Deltest 2: Matematisk-logisk förmåga</h3>
+        <p>Testet är utformat enligt sekvensspelet Fizz buzz. Reglerna är enligt
+            följande, om det sista talet i en talföljd är delbart med tre är svaret
+            ”Fizz”, om talet är delbart med 5 är svaret ”Buzz”. Om talet är
+            både delbart med 3 och 5 är svaret ”FizzBuzz”. Med delbart menas
+            att den ger resten 0. Exempelvis talsekvensen 1, 2, 3, 4, 5 blir 1, 2, Fizz, 4,
+            Buzz, Fizz. De fem delfrågorna i testet består av sex delar i en Fizz buzz
+            sekvens med svarsalternativen; 'FizzBuzz', 'Fizz', 'Buzz' 'Ett tal' </p>
+            <p>Frågorna är formulerade enligt följande exempel:</p><p>Vad ska ersätta ??????
+            i sekvensen:</p>
+            16, 17, Fizz, 19, Buzz, ??????
+            <ul style="list-style-type:none">
+                <li>FizzBuzz</li>
+                <li>Fizz</li>
+                <li>Buzz</li>
+                <li>21</li>
+            </ul>
+            <p>Du ska klicka på det korrekta alternativet. Du har flera svarsmöjligheter
+                på varje fråga. Exemplets korrekta alternativ är <i>Fizz</i>(21/3 =7, rest =0).</p>
+        </div>
+    <div class="object">
+        <h3>Deltest 3: Instruktioner och visuell perception</h3>Testet
+        innebär att 10 unika objekt presenteras på skärmen. Objekt kan vara en kvadrat, en
+        cirkel, en oval eller en rektangel. Objektet har en färg. Samtidigt presenteras en
+        numrerad lista med 10 alternativ som säger i vilken ordning som de olika objekten
+        ska klickas på. Så här kan alternativen på listan se ut.<p>1. Den röda ovalen.</p>
+        <p>2. Den gröna kvadraten.</p><p>3. Den svarta cirkeln.</p>Du ska klicka på objekt
+        i rätt ordning. Testet är tidsatt till 15 seknunder från att du trycker på nästa.</div>
+
+<div class="navigationButton" id="wordButton">Deltest 1</div>
+<div class="navigationButton" id="bufiButton">Deltest 2</div>
+<div class="navigationButton" id="objeButton">Deltest 3</div>
+<div class="navigationButton" id="resultAllButton">Testresultat</div>
+<div id="quiz" class="quiz"></div>
+<div id="countdowntimer" class="countdowntimer">15</div>
+<div id="results" class="results"></div>
+<div id="options" class="options"></div>
+<div id="output"></div>
+<div>
+    <span class="navigationButton" id="prev_button">Starta testet</span>
+    <span class="navigationButton" id="next_button">Nästa</span>
+    <span class="navigationButton" id="result_button">Klar</span>
+</div>
+</div>
+<script src="js/test.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
